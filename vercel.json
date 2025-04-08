@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/web-page-reader",
+      "dest": "/api/web-page-reader.js"
+    }
+  ]
+}

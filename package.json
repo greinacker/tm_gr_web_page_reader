@@ -1,0 +1,19 @@
+{
+  "name": "web-page-reader-serverless",
+  "version": "1.0.0",
+  "description": "Web page reader serverless function for Vercel",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.4.2",
+    "cheerio": "^1.0.0-rc.12",
+    "got": "^11.8.5",
+    "jsdom": "^19.0.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "vercel": "^28.15.0"
+  }
+}
