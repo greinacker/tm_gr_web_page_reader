@@ -2,7 +2,7 @@
   "name": "web-page-reader-serverless",
   "version": "1.0.0",
   "description": "Web page reader serverless function for Vercel",
-  "main": "index.js",
+  "main": "api/web-page-reader.js",
   "scripts": {
     "dev": "vercel dev"
   },
