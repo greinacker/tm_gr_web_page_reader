@@ -10,8 +10,7 @@
     "@mozilla/readability": "^0.4.2",
     "cheerio": "^1.0.0-rc.12",
     "got": "^11.8.5",
-    "jsdom": "^19.0.0",
-    "zod": "^3.21.4"
+    "jsdom": "^19.0.0"
   },
   "devDependencies": {
     "vercel": "^28.15.0"

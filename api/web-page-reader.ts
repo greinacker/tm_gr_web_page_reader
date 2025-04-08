@@ -3,12 +3,6 @@ import { Readability } from '@mozilla/readability';
 import * as cheerio from 'cheerio';
 import got from 'got';
 import { JSDOM } from 'jsdom';
-import { z } from 'zod';
-
-// Define the schema for validation (simplified from your original code)
-const WebPageReaderRequestParamSchema = z.object({
-  url: z.string().url()
-});
 
 const removeUnwantedElements = (_cheerio) => {
   const elementsToRemove = [
@@ -76,17 +70,6 @@ export default async function handler(req, res) {
   }
 
   const { url } = req.query;
-
-  // Validate the URL parameter
-  try {
-    WebPageReaderRequestParamSchema.parse({ url });
-  } catch (error) {
-    return res.status(400).json({
-      status: 'failed',
-      message: 'URL must be a valid string URL',
-      data: null
-    });
-  }
 
   try {
     const content = await fetchAndCleanContent(url);
